@@ -44,7 +44,7 @@ public class SeguridadAppConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().anyRequest().authenticated().and().formLogin()
                 .loginPage("/miFormularioDeLoginURL")                  // nombre del archivo del formulario
                 .loginProcessingUrl("/autenticacionUsuario")     // URL donde se mapea
-                .permitAll();
+                .permitAll().and().logout().permitAll();
 
     }
 

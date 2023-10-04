@@ -11,6 +11,7 @@ public class LoginController {
 
 
 
-        return "loginPageFile";
+        // return "loginPageFile"; ya no devuelve este que era el 1°
+        return "nuevoLogin";
     }
 }

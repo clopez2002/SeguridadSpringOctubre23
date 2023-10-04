@@ -11,6 +11,13 @@
 <html>
 <head>
     <title>Title</title>
+
+    <style>
+
+        .formatoError{color:red}
+
+    </style>
+
 </head>
 <body>
 
@@ -22,11 +29,12 @@
 
         <c:if test="${param.error!=null}"> <!-- aca si ha error, o sea.. algo != null -->
             <div style="text-align: center">
-                <strong>Error: User or password not valid!!</strong>
+                <strong class="formatoError">Error: User or password not valid!!</strong> <!-- con class="formatoError" hacemos que se ponga en rojo -->
             </div>
-
         </c:if>
 
+
+        <!-- Aca los campos para que ingrese user/passsword -->
         <div style="text-align: center">
             <p>
                 UserName:<input type="text" name="username"/> <!-- aca debe llamarse username, si tiene 1 letra distinta, no funca-->
